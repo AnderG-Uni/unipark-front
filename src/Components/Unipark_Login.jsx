@@ -59,71 +59,70 @@ function Login(){
 
     return (
     <>
-        <section class="text-center">
-        <div class="pt-4 bg-transparent text-white" >
+        <section className='bg-withe m-0 p-0'>
+          <div className='row m-0 p-0'>
 
-            <h2>UniPark <span> <h5>Plataforma de videos universitaria </h5></span></h2>
+            {/* Formulario del login*/}
+            <div className='col-6 m-0 p-0 pb-4 mb-2'>
+              
+              <div className='container align-items-center pt-5'>
 
-        </div>
-        
-        <div className='row  contenedorlogin'>
+                <h2 className='pt-5  text-center'><span>Hola, bienvenido a <span>Uni</span><span>Park!</span> </span></h2>
 
-                <div className='col-4'></div>
+                <div className='card border-0 ms-5 me-5 ps-5 pe-5 pt-5 pb-2  '>
 
-                <div className='col-4'>
-                    <div class="card shadow-5-strong mt-5 bg-white p-1 " >
-            
-                    <div class="card-body p-0 ps-3 pe-3">
-                            <div class=" justify-content-center">
+                  <div className="row m-0 p-0 mb-4"> 
+                      <label className='form-label text-start p-0 m-0'  htmlFor="email">Correo o usuario</label>
+                      <input className='form-control ' type="email" placeholder='example@example.com' id="email" required/>
+                  </div>
 
-                                <div className='row col-12 p-0 m-0'>
-                                    <div className='col-lg-4'></div>
-                                    <div className="col-lg-4">
-                                      <img src="https://img.icons8.com/?size=100&id=9pYYRMkYN2BY&format=png&color=000000" class="img-fluid" alt="Sample image" />
-                                    </div>
-                                    <div className='col-lg-4'></div>
-                                </div>
-                                
-                                <div class="col-lg-12">
-                                <h4 class="fw-bold mb-1">Iniciar Sesión</h4>
-                                <form onSubmit={handleSubmitLogin}>
+                  <div className="row m-0 p-0 mb-4"> 
+                      <label className='form-label text-start p-0 m-0'  htmlFor="clave">Calve</label>
+                      <input className='form-control ' type="password" placeholder='**********' id="clave" required/>
+                  </div>
 
-                                    <div class="d-flex justify-content-center">
-                                    
-                                        <div className="row "> 
-                                        <div data-mdb-input-init class="form-outline mb-2">
-                                        <label class="form-label col-12 text-start" htmlFor="email"><strong>Usuario </strong></label>
-                                        <input type="email" placeholder='example@example.com' id="email" class="form-control" value={correo} onChange={(e) => setCorreo(e.target.value)} required/>
-                                        </div>
+                  <a href="#"  className='text-end'><span>¿Olvidate tu contraseña?</span></a>
 
-                                        <div data-mdb-input-init class="form-outline mb-2">
-                                        <label class="form-label col-12 text-start" for="form3Example4"> <strong>Clave</strong></label>
-                                        <input type="password" id="form3Example4" class="form-control" placeholder='***********' value={password} onChange={(e) => setPassword(e.target.value)} required/>
-                                        
-                                        </div>
-                                        </div>
+                  <div className=' mt-3 mb-4'>
+                    <button className='btn btn-warning col-12'>Iniciar Sesión</button>
+                  </div>
 
-                                    </div>
+                  <div className='row col-12 m-0 p-0'>
+                    <div className='col-4 border-bottom'></div>
+                    <div className='col-4 text-center'> <span >o registrate con</span> </div>
+                    <div className='col-4 border-bottom'></div>
+                  </div>
 
-                                    <button type="submit" class="btn btn-primary btn-block mb-2"  >
-                                    Iniciar Sesión
-                                    </button>
-
-                                    <div class="text-center">
-                                        <p class="mb-1 pb-lg-2" >¿Aún no tienes una cuenta?  <a href="#" onClick={nuevousuario}> Registrate aqui</a></p>
-                                    </div>
-                                </form>
-
-                                </div>
-                            </div>
+                  <div className='container m-0 p-0  mt-5 mb-3'>
+                    <div className='row col-12 m-0 p-0'>
+                      <div className='col-3'></div>
+                      <div className='col-2'>ico1</div>
+                      <div className='col-2'>ico2</div>
+                      <div className='col-2'>ico3</div>
+                      <div className='col-3'></div>
                     </div>
-            
-                    </div>
+                  </div>
+
+                  <div className='row col-12 m-0 p-0'>
+                    <div className='col-2'></div>
+                    <div className='col-8 text-center'> <span >¿ya tienes una cuenta?</span> <a href="#">Inicia Sesión</a> </div>
+                    <div className='col-2'></div>
+                  </div>
+
+
                 </div>
+              </div>
+            </div>
 
-                <div className='col-4'></div>
+            {/* Imagen del login*/}
+            <div className='col-6 m-0 p-0 ps-3 pe-3 pt-2 bg-primary bg-gradient'>
+              
+            <div class="bg-image shadow-5-strong" >
+                <img src="https://archindustrial.com.co/wp-content/uploads/2024/02/Parqueaderos-render-disenoseno-de-parqueaderos-IMG-32.jpg" class="img-fluid card border-0" alt="Sample image" />
+              </div>
+            </div>
 
-        </div>
+          </div>
         </section>
     </>
     );

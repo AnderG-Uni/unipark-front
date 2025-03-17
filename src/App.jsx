@@ -1,36 +1,31 @@
 import React, { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Login from './Components/Unipark_Login.jsx';
+//import Home from './Components/Unipark_Home.jsx';
+//import Report from './Components/Unipark_Reports.jsx';
+//import History from './Components/Unipark_History_User.jsx';
+//import RegisterUser from './Components/Unipark_Register_User.jsx';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [user, setUser] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+
+    <BrowserRouter>
+      {/* <Navigation/> */}
+      <Routes>
+        <Route index element={<Login callback={setUser}/>}></Route>
+        
+        {/*<Route path='/Inicio' element={<Home user={user}/>} ></Route>
+        <Route path='/Reproducir/:id' element={<Report user={user}/>} ></Route>
+        <Route path='/InicioUser' element={<History user={user}/>} ></Route>
+        <Route path='/InicioVideos' element={<RegisterUser user={user}/>} ></Route>*/}
+
+      </Routes>
+    </BrowserRouter>
+
   )
 }
 
