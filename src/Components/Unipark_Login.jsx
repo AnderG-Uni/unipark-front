@@ -64,7 +64,6 @@ function Login(){
 
             {/* Formulario del login*/}
             <div className='col-6 m-0 p-0 pb-4 mb-2'>
-              
               <div className='container align-items-center pt-5'>
 
                 <h2 className='pt-5  text-center'><span>Hola, bienvenido a <span>Uni</span><span>Park!</span> </span></h2>
@@ -93,12 +92,12 @@ function Login(){
                     <div className='col-4 border-bottom'></div>
                   </div>
 
-                  <div className='container m-0 p-0  mt-5 mb-3'>
+                  <div className='container m-0 p-0  mt-3 mb-3'>
                     <div className='row col-12 m-0 p-0'>
                       <div className='col-3'></div>
-                      <div className='col-2'>ico1</div>
-                      <div className='col-2'>ico2</div>
-                      <div className='col-2'>ico3</div>
+                      <div className='col-2'> <img src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt='star' height="50" title='Facebook'/> </div>
+                      <div className='col-2'> <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt='star' height="50" title='Instagram'/> </div>
+                      <div className='col-2'> <img src="https://img.icons8.com/?size=100&id=13930&format=png&color=000000" alt='star' height="50" title='Linkedin'/> </div>
                       <div className='col-3'></div>
                     </div>
                   </div>
@@ -109,7 +108,6 @@ function Login(){
                     <div className='col-2'></div>
                   </div>
 
-
                 </div>
               </div>
             </div>
@@ -117,6 +115,8 @@ function Login(){
             {/* Imagen del login*/}
             <div className='col-6 m-0 p-0 ps-3 pe-3 pt-2 bg-primary bg-gradient'>
               
+                <img src="https://www.flaticon.es/icono-gratis/linkedin_3536505" class="img-fluid card border-0" alt="Sample image" />
+
             <div class="bg-image shadow-5-strong" >
                 <img src="https://archindustrial.com.co/wp-content/uploads/2024/02/Parqueaderos-render-disenoseno-de-parqueaderos-IMG-32.jpg" class="img-fluid card border-0" alt="Sample image" />
               </div>
